@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>How Algorithm Works</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+	<script src="{{url_for('static', filename='sketch.js')}}"></script>
+	<script src="{{url_for('static', filename='algorithms.js')}}"></script>
+	<style>
+	.center {
+	  margin: auto;
+	  width: 60%;
+	  padding: 10px;	
+	}
+	.slidecontainer {
+		width: 100%;
+	}
+
+	.slider {
+		-webkit-appearance: none;
+		width: 100%;
+		height: 25px;
+		background: #d3d3d3;
+		outline: none;
+		opacity: 0.7;
+		-webkit-transition: .2s;
+		transition: opacity .2s;
+	}
+
+	.slider:hover {
+		opacity: 1;
+	}
+
+	.slider::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		appearance: none;
+		width: 25px;
+		height: 25px;
+		background: #4CAF50;
+		cursor: pointer;
+	}
+
+	.slider::-moz-range-thumb {
+		width: 25px;
+		height: 25px;
+		background: #4CAF50;
+		cursor: pointer;
+	}
+	</style>
+</head>
+<p class="center" style="font-size:50px;">How Algorithm Works</p>
+<body>
+
+	<div class="center">
+		<button type="button" class="btn btn-primary" onclick="SetAlgorithm('Quick_Sort')">Quick Sort</button>
+		<button type="button" class="btn btn-secondary" onclick="SetAlgorithm('Bubble_Sort')">Bubble Sort</button>
+		<button type="button" class="btn btn-success" onclick="SetAlgorithm('Merge_Sort')">Merge Sort</button>
+		<button type="button" class="btn btn-danger" onclick="SetAlgorithm('Insertion_Sort')">Insertion Sort</button>
+		<button type="button" class="btn btn-warning" onclick="SetAlgorithm('Selection_Sort')">Selection Sort</button>
+		<button type="button" class="btn btn-info" onclick="SetAlgorithm('Heap_Sort')">Heap Sort</button>
+	</div>
+
+	<div>
+		<input type="range" min="1" max="100" value="50" class="slider" id="framerate">
+	</div>
+  	
+  	
+
+    <main class="center"></main>
+
+    <div class="center">
+		<button class="btn btn-success" onclick="SetPlay(1)">Play!</button>
+		<button class="btn btn-danger" onclick="SetPlay(0)">Pause</button>
+		<button class="btn btn-info" onclick="SetReset(1)">Reset</button>
+    </div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+<html>
+  <head>
+
+
+
+  </head>
+  <body>
+
+  </body>
+</html>
